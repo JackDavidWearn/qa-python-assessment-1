@@ -226,9 +226,6 @@ def seven(inputString, char):
 		return positionOfChar
 	else:
 		return -1
-
-print(seven("This is a Sentence", "z"))
-
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 8>
@@ -254,7 +251,17 @@ print(seven("This is a Sentence", "z"))
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	splitString = arg1.split()
+	mappedIntegers = map(int, splitString)
+	mapToList = list(mappedIntegers)
+	totalList = []
+	for i in mapToList:
+		sum = 0
+		for x in str(i):
+			sum += int(x)
+		totalList.append(sum)
+	return max(totalList)
+	
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
