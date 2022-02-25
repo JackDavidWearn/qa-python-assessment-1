@@ -347,6 +347,8 @@ def ten(input):
 			list.append(splitString[0])
 		else:
 			list = list
+	elif len(splitString) != 4:
+		pass
 	return list
 
 
