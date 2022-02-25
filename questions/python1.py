@@ -156,7 +156,14 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	numbersBefore = []
+	totalNumber = 1
+	for i in range(input + 1):
+		numbersBefore.append(i)
+	numbersBefore.remove(0)
+	for x in numbersBefore[::-1]:
+		totalNumber *= x
+	return totalNumber
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
