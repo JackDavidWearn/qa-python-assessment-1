@@ -35,6 +35,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from turtle import position
+
+
 def one(input1, input2):
 	if len(input1) == len(input2):
 		return f"{input1} {input2}"
@@ -216,7 +219,15 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	strippedString = inputString.replace(" ", "")
+	positionOfChar = strippedString.find(char)
+	positionOfChar = positionOfChar + 1
+	if char in inputString:
+		return positionOfChar
+	else:
+		return -1
+
+print(seven("This is a Sentence", "z"))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
