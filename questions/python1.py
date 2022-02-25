@@ -288,8 +288,14 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
-
+	input = input.lower()
+	bertCount = input.count("bert")
+	if bertCount == 2:
+		splitInput = input.split("bert")
+		word = splitInput[1]
+		return word
+	else:
+		return ""
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
