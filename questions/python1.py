@@ -100,8 +100,6 @@ def three(input):
 			totalVowels = totalVowels
 	return totalVowels
 
-print(three("hEelLoooO"))
-
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 4>
@@ -123,7 +121,22 @@ print(three("hEelLoooO"))
 
 
 def four(input):
-    return False
+	# First attempt at it below, but changed it for an inline if ... else statement 
+	# for i in range(len(inputLower)):
+	# 	if "cei" in inputLower:
+	# 		return True
+	# 	elif "cie" in inputLower:
+	# 		return False
+	# 	elif "ie" in inputLower:
+	# 		return True
+	# 	elif "ei" in inputLower:
+	# 		return False
+	# 	else:
+	# 		return False
+	inputLower = input.lower()
+	return True if "cei" in inputLower else False if "cie" in inputLower else True if "ie" in inputLower else False if "ei" in inputLower else False
+
+    
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
