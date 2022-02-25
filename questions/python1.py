@@ -324,7 +324,32 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+	splitString = input.split(',')
+	# if len(splitString) == 4:
+	# 	if splitString[2] == 'False':
+	# 		return f'["{splitString[0]}"]'
+	# 	else:
+	# 		return []
+	# else:
+	# 	for i in splitString:
+	# 		if "False" in i:
+	# 			if len(splitString) == 12:
+	# 				if splitString[0] != splitString[4] or splitString[8]:
+	# 					return f'["{splitString[0]}", "{splitString[4]}", "{splitString[8]}"]'
+	# 			elif len(splitString) == 8:
+	# 				return f'["{splitString[0]}", "{splitString[4]}"]'
+	# 			else:
+	# 				return f'["{splitString[0]}"]'
+
+	list = []
+	if len(splitString) == 4:
+		list.append(splitString[0])
+	return list
+
+
+
+
+print(ten("Jeff,random.py,False,1445"))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
