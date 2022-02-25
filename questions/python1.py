@@ -343,7 +343,10 @@ def ten(input):
 
 	list = []
 	if len(splitString) == 4:
-		list.append(splitString[0])
+		if splitString[2] == 'False':
+			list.append(splitString[0])
+		else:
+			list = list
 	return list
 
 
